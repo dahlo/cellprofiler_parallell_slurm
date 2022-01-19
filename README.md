@@ -7,10 +7,10 @@ The script is divided into 2 main stages, where it will first run the pipelines 
 
 Our use-case was that we first have to do illumination correction, which requires all imagesets to be present when run. After that step is run, we can run the remaining part of our pipeline (feature extraction) on 1 imageset per job, and run them all in parallell.
 
-# Basic usag
+# Basic usage
 
 ```bash
-bash feature_extraxtion_parallelized_v3.sh \
+bash feature_extraction_parallelized_v3.sh \
     -i /path/to/image_files/U2OS-24hr-1/ \
     -o /path/to/output_folder/U2OS-24hr-1 \
     -w cp_pipelines/v3/combtoxU2OS_2_Calculate_IllumFunction_subset.cppipe
