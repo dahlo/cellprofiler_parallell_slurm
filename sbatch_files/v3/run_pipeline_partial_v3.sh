@@ -14,7 +14,7 @@ link_list=$7
 # mount sshfs if needed
 mkdir -p $TMPDIR/crex/proj
 ln -s crex/proj $TMPDIR/proj
-[[ -d $TMPDIR/proj/snic2019-8-149/private/mnt/$USER/mikro/IMX ]] || { /proj/snic2019-8-149/private/mount_with_sshfs.sh $TMPDIR ,ro ; sshfs_keeper=1 ; }
+#[[ -d $TMPDIR/proj/snic2019-8-149/private/mnt/$USER/mikro/IMX ]] || { /proj/snic2019-8-149/private/mount_with_sshfs.sh $TMPDIR ,ro ; sshfs_keeper=1 ; }
 
 # avoid any symlinks in the cwd
 cd $(pwd -P)
